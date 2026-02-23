@@ -99,7 +99,10 @@ const Index = () => {
                     <span className="text-lg font-semibold">8 April, 2026</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                    <ModernButton size="lg" onClick={() => window.open("https://docs.google.com/forms/d/1S3b9QNNP1eOPMm1msxD7DecDZgcl-s7eXAWAwsCEXO8/viewform?edit_requested=true", "_blank")}>
+                    <ModernButton 
+                      size="lg" 
+                      onClick={() => window.open("https://forms.gle/JvYLsCFwE5Dns8D57", "_blank")}
+                    >
                       Register Now
                     </ModernButton>
                     <div className="flex items-center gap-4">
@@ -296,7 +299,10 @@ const Index = () => {
                         Registration fee to be paid in the form of Demand Draft drawn in favor of
                         "THE PRINCIPAL, SRI VENKATESWARA COLLEGE OF ENGINEERING", payable at Sriperumbudur.
                       </p>
-                      <ModernButton className="w-full" onClick={() => window.open("https://docs.google.com/forms/d/1S3b9QNNP1eOPMm1msxD7DecDZgcl-s7eXAWAwsCEXO8/viewform?edit_requested=true", "_blank")}>
+                      <ModernButton 
+                        className="w-full" 
+                        onClick={() => window.open("https://forms.gle/JvYLsCFwE5Dns8D57", "_blank")}
+                      >
                         Register Here!
                       </ModernButton>
                     </div>
