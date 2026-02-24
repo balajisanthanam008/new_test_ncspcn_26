@@ -11,10 +11,10 @@ import { ModernButton } from "@/components/ModernButton";
 import { GlassCard } from "@/components/GlassCard";
 import ThemeToggle from "@/components/ThemeToggle";
 
-import HeroImage from "@/assets/hero-conference.jpg";
-import CampusImage from "@/assets/college-campus.jpg";
+import HeroImage from "@/assets/home.webp";
+import CampusImage from "@/assets/college_about.png";
 import DeptImage from "@/assets/ece-department.jpg";
-import ConferenceImage from "@/assets/conference-hall.jpg";
+import ConferenceImage from "@/assets/About-ncspcn.png";
 
 const navLinks = [
   { href: "#home", label: "Home" },
