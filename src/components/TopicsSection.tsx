@@ -1,23 +1,21 @@
 import {
-  Radio, Network, Activity, Cpu, Antenna, Layers, Share2, Wifi, ShieldAlert, Image as ImageIcon, BrainCircuit,
+  Radio, Network, Activity, Cpu, Antenna, Layers, Share2, Wifi, Image as ImageIcon, BrainCircuit,
 } from "lucide-react";
 import { TopicCard } from "@/components/TopicCard";
 import FadeSection from "@/components/FadeSection";
 
 export default function TopicsSection() {
   const topics = [
-    { title: "Ad hoc & Sensor Networks", icon: <Network className="h-10 w-10" /> },
     { title: "Bio-Medical Signal Processing", icon: <Activity className="h-10 w-10" /> },
-    { title: "DSP Algorithms & Applications", icon: <Cpu className="h-10 w-10" /> },
-    { title: "Electronic Systems", icon: <Cpu className="h-10 w-10" /> },
+    { title: "Embedded VLSI/IoT", icon: <Cpu className="h-10 w-10" /> },
     { title: "Microwave (Antenna/Measurements/EMI/EMC)", icon: <Antenna className="h-10 w-10" /> },
     { title: "MIMO Systems", icon: <Layers className="h-10 w-10" /> },
     { title: "Networking & Communication Engineering", icon: <Share2 className="h-10 w-10" /> },
+    { title: "Soft Computing", icon: <BrainCircuit className="h-10 w-10" /> },
+    { title: "Ad hoc & Sensor Networks", icon: <Network className="h-10 w-10" /> },
     { title: "Cognitive Radio & Dynamic Spectrum Management", icon: <Radio className="h-10 w-10" /> },
     { title: "Optical Network Protocols", icon: <Wifi className="h-10 w-10" /> },
-    { title: "Security in Communication & Networking", icon: <ShieldAlert className="h-10 w-10" /> },
     { title: "Signal, Image Processing & Machine Learning", icon: <ImageIcon className="h-10 w-10" /> },
-    { title: "Soft Computing", icon: <BrainCircuit className="h-10 w-10" /> },
   ];
 
   return (

@@ -99,15 +99,15 @@ const Index = () => {
                     <span className="text-lg font-semibold">8 April, 2026</span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                    <ModernButton 
-                      size="lg" 
+                    <ModernButton
+                      size="lg"
                       onClick={() => window.open("https://forms.gle/JvYLsCFwE5Dns8D57", "_blank")}
                     >
                       Register Now
                     </ModernButton>
                     <div className="flex items-center gap-4">
                       <a href="https://www.svce.ac.in/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M2 12h20" /><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" /></svg>
                       </a>
                       <a href="https://instagram.com/svceofficial" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                         <Instagram className="h-5 w-5" />
@@ -145,7 +145,7 @@ const Index = () => {
                 <h2 className="text-4xl font-bold mb-2 gradient-text">NCSPCN '26</h2>
                 <p className="text-muted-foreground">Mark your calendars for the conference</p>
               </div>
-              <CountdownTimer targetDate="April 8, 2026" />
+              <CountdownTimer targetDate="2026-04-08T00:00:00" />
             </div>
           </section>
         </FadeSection>
@@ -274,9 +274,9 @@ const Index = () => {
                         <FileText className="h-5 w-5" /> Paper & Poster Presentation
                       </h3>
                       <p className="text-muted-foreground leading-relaxed mb-4">
-                        Researchers, Academicians, PG/UG students and personnel from industries are invited to submit
-                        their research work for oral and poster presentation. Submitted work must be original and should not
-                        have been presented or published elsewhere.
+                        Researchers, Academicians, UG/PG students and personnel from industries are invited to submit
+                        their research work for oral presentation, in IEEE format not exceeding six pages.
+                        Submitted research work must be original and should not have been presented or published anywhere else.
                       </p>
                       <div className="flex flex-col gap-2 mb-6">
                         <div className="flex items-center gap-2">
@@ -295,12 +295,18 @@ const Index = () => {
                         <span className="text-3xl font-bold text-primary">₹750/-</span>
                         <p className="text-sm text-muted-foreground mt-1">Per participant</p>
                       </div>
-                      <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                        Registration fee to be paid in the form of Demand Draft drawn in favor of
-                        "THE PRINCIPAL, SRI VENKATESWARA COLLEGE OF ENGINEERING", payable at Sriperumbudur.
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                        Interested participants can submit the paper through the Google Form link provided below.
                       </p>
-                      <ModernButton 
-                        className="w-full" 
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-2">
+                        Best Paper will be awarded for each session based on the article quality.
+                      </p>
+                      <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+                        For paper submission G-Form Link:{" "}
+                        <a href="https://forms.gle/JvYLcFwE5Dns8D57" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline break-all">https://forms.gle/JvYLcFwE5Dns8D57</a>
+                      </p>
+                      <ModernButton
+                        className="w-full"
                         onClick={() => window.open("https://forms.gle/JvYLsCFwE5Dns8D57", "_blank")}
                       >
                         Register Here!
@@ -322,13 +328,12 @@ const Index = () => {
                 <GlassCard>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     All papers will be peer reviewed and accepted papers will be published in our conference
-                    proceedings NCSPCN - 2026.
+                    proceedings NCSPCN '26.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Selected papers will be recommended to UGC care listed journal with authors consent with
-                    additional cost.
+                    Conference Website:{" "}
+                    <a href="https://ncspcn26.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://ncspcn26.vercel.app/</a>
                   </p>
-                  <p className="text-foreground leading-relaxed font-semibold">Note: Plagiarism check will be done</p>
                 </GlassCard>
               </div>
             </div>
@@ -378,10 +383,16 @@ const Index = () => {
                   <div className="flex justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
                       <FadeSection delay={100}>
-                        <CommitteeCard name="Dr. R. Gayathri" position="Professor" company="ECE" />
+                        <CommitteeCard name="Dr. R. Gayathri" position="Professor / ECE" company="ECE" />
                       </FadeSection>
                       <FadeSection delay={200}>
-                        <CommitteeCard name="Ms. S. M. Mehzabeen" position="Assistant Professor" company="ECE" />
+                        <CommitteeCard name="Ms. S. M. Mehzabeen" position="AP / ECE" company="ECE" />
+                      </FadeSection>
+                      <FadeSection delay={300}>
+                        <CommitteeCard name="Dr. K. Bhuvaneswari" position="AP / ECE" company="ECE" />
+                      </FadeSection>
+                      <FadeSection delay={400}>
+                        <CommitteeCard name="Dr. N. Varnikha" position="AP / ECE" company="ECE" />
                       </FadeSection>
                     </div>
                   </div>
@@ -395,8 +406,19 @@ const Index = () => {
                       {[
                         "Dr. S Vijayanand, Associate Professor/ECE",
                         "Mrs.K S Subhashini, Assistant Professor/ECE",
+                        "Mr.S Senthil Rajan, Assistant Professor/ECE",
+                        "Mr.S P Sivagnana Subramanian, Assistant Professor/ECE",
+                        "Mrs.S Kalyani, Assistant Professor/ECE",
+                        "Mrs.R Kousalya, Assistant Professor/ECE",
+                        "Mrs.L Anju, Assistant Professor/ECE",
+                        "Mrs.B Sarala, Assistant Professor/ECE",
+                        "Mr.P Muthukumaran, Assistant Professor/ECE",
+                        "Mr.M K Varadarajan, Assistant Professor/ECE",
+                        "Mrs.C Gomatheeswari Preethika, Assistant Professor/ECE",
                         "Dr. N. Sathish, Assistant Professor/ECE",
+                        "Mr. Kanagaluru Venkatesh, Assistant Professor/ECE",
                         "Mrs. S. Mary Cynthia, Assistant Professor/ECE",
+                        "Mrs. B. Elakkiya, Assistant Professor/ECE",
                         "Mr.S.Elangovan, Assistant Professor/ECE",
                         "Mr.L.K.Balaji Vignesh, Assistant Professor/ECE",
                         "Mr. D. Silambarasan, Assistant Professor/ECE",
@@ -421,11 +443,6 @@ const Index = () => {
                   <div className="flex justify-center">
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl">
                       {[
-                        "Dr.E.N Ganesh, Principal, SVCE",
-                        "Dr.R.Gayathri, Professor / ECE",
-                        "Ms. S. M. Mehzabeen, AP / ECE",
-                        "Dr.K.Bhuvaneswari, AP / ECE",
-                        "Dr.N.Varnikha, AP / ECE",
                         "Dr.S.R.Malathi, Professor/ECE",
                         "Dr. T. J. Jeyaprabha, Associate Professor/ECE",
                         "Dr.D.Menaka, Associate Professor/ECE",
@@ -489,9 +506,12 @@ const Index = () => {
                         </div>
                       </div>
                     </div>
-                    <div className="mt-4">
+                    <div className="mt-4 space-y-2">
                       <p className="text-muted-foreground text-sm">
                         Website: <a href="https://www.svce.ac.in" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.svce.ac.in</a>
+                      </p>
+                      <p className="text-muted-foreground text-sm">
+                        Conference Website: <a href="https://ncspcn-26.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">https://ncspcn-26.vercel.app/</a>
                       </p>
                     </div>
                   </GlassCard>
