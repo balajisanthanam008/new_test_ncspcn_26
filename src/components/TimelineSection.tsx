@@ -3,9 +3,9 @@ import { GlassCard } from "@/components/GlassCard";
 
 export default function TimelineSection() {
   const events = [
-    { date: "16th May 2026", event: "Submission of full length paper" },
-    { date: "18th May 2026", event: "Notification of acceptance" },
-    { date: "25th May 2026", event: "Submission of camera ready paper" },
+    { date: "16th March 2026", event: "Submission of full length paper" },
+    { date: "18th March 2026", event: "Notification of acceptance" },
+    { date: "25th March 2026", event: "Submission of camera ready paper" },
     { date: "8th April 2026", event: "Conference date" },
   ];
 
